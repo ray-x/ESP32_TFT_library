@@ -382,7 +382,7 @@ Send color buffer time: 228 us (240 pixels)
 
 ### Tested on
 
-ESP32-WROVER-KIT v3, ST7789V controller, 240x320
+ESP32-WROVER-KIT v3, ILI9341(ST7789V?) controller, 240x320
 ![Tested on](https://raw.githubusercontent.com/loboris/MicroPython_ESP32_psRAM_LoBo/master/Documents/disp_wrower-kit.jpg)
 
 2.4" 240x320 ILI9341 conroller with Touch panel from eBay
