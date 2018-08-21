@@ -1,9 +1,14 @@
 
-### TFT library for ESP32
+### TFT library for ESP32 fork from loboris/ESP32_TFT_library 
 
 ---
 
-**This library must be built with the latest esp-idf master branch and xtensa toolchain**
+** Fixed a few issue of loading TFT demo for esp32 wrover board v3 **
+Note: vrover v3 may still use ili9431
+It was said that wrover v3 was loaded with ST7789 but it is not true. Mine was bought on Aug-02-2018 but ST7789 not
+working
+Change to ILI9341, but the line is reversed when loading the demo. So need to reverse the line buffer and it seems that
+every behave itself.
 
 If you are using the esp-idf v2.1, checkout the commit *0518df81a6566820352dad7bf6c539995d41ad18*
 
@@ -179,6 +184,9 @@ To run the demo, attach ILI9341, ILI9488 or ST7735 based display module to ESP32
 Also set **TFT_RGB_BGR** to 0x00 and **TFT_INVERT_ROTATION1** to 1 in *tftspi.h*
 
 **You can also select EXAMPLE_ESP_WROVER_KIT in menuconfig to automaticaly define correct configuration**
+
+** Change flash size to 4MB when loading wrover kit **
+** Also the USB is /dev/ttyUSB1 (instead of default /dev/ttyUSB0) MacOS /dev/cu.xxx1 **
 
 ---
 

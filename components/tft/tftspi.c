@@ -22,7 +22,7 @@
 // Converts colors to grayscale if set to 1
 uint8_t gray_scale = 0;
 // Spi clock for reading data from display memory in Hz
-uint32_t max_rdclock = 8000000;
+uint32_t max_rdclock = 40000000;
 
 // Default display dimensions
 int _width = DEFAULT_TFT_DISPLAY_WIDTH;

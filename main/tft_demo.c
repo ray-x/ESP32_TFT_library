@@ -1271,7 +1271,7 @@ void app_main()
 	// ==== Set maximum spi clock for display read    ====
 	//      operations, function 'find_rd_speed()'    ====
 	//      can be used after display initialization  ====
-	max_rdclock = 8000000;
+	max_rdclock = 40000000;
 	// ===================================================
 
     // ====================================================================
@@ -1292,7 +1292,7 @@ void app_main()
 		.max_transfer_sz = 6*1024,
     };
     spi_lobo_device_interface_config_t devcfg={
-        .clock_speed_hz=8000000,                // Initial clock out at 8 MHz
+        .clock_speed_hz=20000000,                // Initial clock out at 20 MHz
         .mode=0,                                // SPI mode 0
         .spics_io_num=-1,                       // we will use external CS pin
 		.spics_ext_io_num=PIN_NUM_CS,           // external CS pin
