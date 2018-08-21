@@ -4,7 +4,7 @@
 ---
 
 ** Fixed a few issue of loading TFT demo for esp32 wrover board v3 **
-Note: vrover v3 may still use ili9431
+Note: wrover v3 may still use ili9431
 It was said that wrover v3 was loaded with ST7789 but it is not true. Mine was bought on Aug-02-2018 but ST7789 not
 working
 Change to ILI9341, but the line is reversed when loading the demo. So need to reverse the line buffer and it seems that
